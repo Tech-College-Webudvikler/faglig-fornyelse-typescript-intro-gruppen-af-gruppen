@@ -1,0 +1,37 @@
+:root {
+    --modal-bg: white;
+    --modal-text: black;
+  }
+  
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .modal {
+    background-color: var(--modal-bg, white);
+    color: var(--modal-text, black);
+    padding: 2rem;
+    border-radius: 12px;
+    position: relative;
+    min-width: 300px;
+    min-height: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
